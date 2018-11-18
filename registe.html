@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link href="css/registe.css" rel="stylesheet">
+</head>
+<body>
+<form class="registe">
+    <div class="registe_head"><img src="images/注册Techno%20Mart.png"></div>
+    <p class="rg_p1">账号登录</p>
+    <table><input id="user" type="text" placeholder="请输入账号"></table>
+    <table><input id="password" type="password" placeholder="请输入密码"></table>
+    <table><input id="repassword" type="password" placeholder="请确认密码"></table>
+    <span id="msg" style="display: none"></span>
+    <button class="btn" type="submit" onClick="return check()">立即注册</button>
+    <p class="rg_p2">已有账号<a href="login.html">立即登录</a></p>
+</form>
+</body>
+<script>
+    function check() {
+        var user = document.getElementById("user");
+        var password = document.getElementById("password");
+        var repassword = document.getElementById("repassword");
+        var msg = document.getElementById("msg");
+
+        if(user.value==""&&password.value==""){
+           msg.innerHTML ="账号密码不能为空";
+           msg.style.display ="block";
+           user.style.border="1px solid crimson";
+           return false;
+        }
+        if (user.value==""&&password.value!=""){
+            msg.innerHTML ="账号不能为空";
+            msg.style.display ="block";
+            return false;
+        }
+        if (user.value!=""&&password.value=="") {
+            msg.innerHTML ="密码不能为空";
+            msg.style.display ="block";
+            return false;
+        }
+        if (password.value!=repassword.value){
+            msg.innerHTML ="两次密码不一致";
+            msg.style.display ="block";
+            return false;
+        }
+        else {
+            alert("注册成功！");
+            window.location.href="login.html";
+            return false;
+        }
+    }
+
+    //判断obj是否有此class
+    function hasClass(obj,cls){
+        return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+    }
+    //为obj添加class
+    function addClass(obj,cls){
+        if(!this.hasClass(obj,cls)){
+            obj.className += " " + cls;
+        }
+    }
+    //移除obj所对应的class
+    function removeClass(obj,cls){
+        if(hasClass(obj,cls)){
+            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+            obj.className = obj.className.replace(reg," ");
+        }
+    }
+</script>
+</html>

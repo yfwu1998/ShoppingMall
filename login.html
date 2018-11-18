@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+<form class="login">
+    <div class="login_head"><img src="images/登录Techno%20Mart.png"></div>
+    <p class="lg_p1">账号登录</p>
+    <table><input id="user" type="text" placeholder="请输入账号"></table>
+    <table><input id="password" type="password" placeholder="请输入密码"></table>
+    <div class="checkbox"><input id="checkbox" type="checkbox" value="remember-me">记住密码</div>
+    <span id="msg" style="display: none"></span>
+    <button class="btn" type="submit" onclick="return check()">登录</button>
+    <p class="lg_p2">没有账号<a href="registe.html">立即注册</a></p>
+</form>
+</body>
+<script>
+    function check() {
+        var user = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+        var msg = document.getElementById("msg");
+        if(user==""&&password==""){
+            msg.innerHTML ="账号密码不能为空";
+            msg.style.display ="block";
+            return false;
+        }
+        if (user==""&&password!=""){
+            msg.innerHTML ="账号不能为空";
+            msg.style.display ="block";
+            return false;
+        }
+        if (user!=""&&password=="") {
+            msg.innerHTML ="密码不能为空";
+            msg.style.display ="block";
+            return false;
+        }
+        if(user=="admin"&&password=="123456"){
+            alert("登录成功！");
+            window.location.href="index.html";
+            return false;
+        }else {
+            msg.innerHTML = "账号密码错误！";
+            msg.style.display = "block";
+            return false;
+        }
+    }
+</script>
+</html>

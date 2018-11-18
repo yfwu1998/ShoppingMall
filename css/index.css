@@ -1,0 +1,847 @@
+@charset "uft-8";
+*{
+	padding: 0px;
+	margin: 0px;
+    color: #333333;
+    list-style: none;
+    text-decoration: none;
+}
+
+  /*导航栏*/
+body{
+	background: #F0F0F0;
+}
+.nav{
+    width: 100%;
+	height: 80px;
+	background-color:#ffffff;
+}
+.all{
+	width: 1366px;
+	/*height: 80px;*/
+	margin: 0 auto;
+}
+.logo{
+	width: 240px;
+	height: 80px;
+	margin-left: 93px;
+	background-image: url("../images/index/logo.png");
+}
+.left{
+	width: 500px;
+	height: 80px;
+	margin-left: 375px;
+	margin-top: -50px;
+
+}
+.left ul li{
+	margin: 0 auto;
+	display: inline-block;
+	margin-right:25px;
+	
+}
+
+.left ul li a:hover{
+	color: #33c1ff;
+}
+
+.BK{
+    margin-left:800px;
+    margin-top: -85px;
+}
+.BK input{
+	width: 220px;
+	height: 30px;
+    border: 1px solid rgba(0,0,0,0.5);
+	padding-left: 20px;
+    border-radius: 20px;
+}
+.Log{
+	width: 100px;
+	height: 80px;
+	margin-left:1080px;
+	margin-top: -28px;
+}
+.Log ul li{
+	display: inline-block;
+
+}
+.Log ul li a:hover{
+	color: #33c1ff;
+}
+/*导航栏*/
+
+
+/*展示栏*/
+.all-top{
+	position: relative;
+	width: 1366px;
+	height: 480px;
+	margin: 0 auto;
+}
+.main-left{
+	width: 240px;
+	height: 480px;
+	background-color: rgba(0,0,0,0.6);
+	margin: 0 0 0 93px;
+	position: absolute;
+	z-index: 100;
+}
+
+.main-left li{
+	height: 60px;
+    line-height: 70px;
+}
+
+.main-left a{
+	color: #ffffff;
+	margin-left: 30px;
+	margin-top: 30px;
+
+}
+.main-left li:hover{
+	background-color: #71daff;
+}
+
+.main-left ul li ul{
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top:0px;
+	left: 240px;
+	display: none;
+	background-color: #ffffff;
+	margin: 0 auto;
+	z-index: 100;
+}
+
+.main-left ul li ul li{
+	width:250px;
+	height: 80px;
+	background-image: url("../images/xm.png");
+	background-repeat: no-repeat;
+	/*float: left;*/
+}
+.main-left ul li:hover ul{
+	display: block;
+
+}
+.main-left ul li:hover li{
+	background-color: #ffffff;
+}
+
+.main-left ul li ul li a{
+	color: #333333;
+	margin-left: 120px;
+}
+.main-left ul li ul li:hover a{
+	color: #33c1ff;
+}
+/*轮播图*/
+#LBT{
+	width:1366px;
+	height: 480px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+}
+#box{
+	width: 9999px;
+	position: relative;
+	overflow: hidden;
+	transition: all 1s;
+	left: 0px;
+}
+#box li{
+	float: left;
+}
+#list{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -80px;
+}
+#list li{
+	width: 35px;
+	height: 5px;
+	border: 1px solid #4b545f;
+	margin-right: 10px;
+	border-radius: 5px;
+	float: left;
+
+}
+.current{
+	background: white;
+}
+.all-top span{
+	width: 20px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	z-index: 2;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.all-top span img{
+	width: 40px;
+	height: auto;
+}
+.all-top .left{
+	left: -30px;
+}
+.all-top .right{
+	right: 40px;
+}
+/*展示栏*/
+
+/*新机型优惠展示 */
+
+.layout{
+	position: relative;
+	width: 1366px;
+	height: 298px;
+	background-color: #F0F0F0;
+	margin: 0 auto;
+	padding-top:20px;
+}
+.layout-margin{	
+    margin: 0 auto;
+	width: 1180px;
+	height: 178px;
+    margin-top: 20px;
+}
+.layout-margin div:hover{
+	box-shadow: DimGrey 2px 2px 6px;
+}
+#P1{
+	float: left;
+	width: 280px;
+	height: 178px;
+	background-image: url("../images/index/xm2.png");
+	background-size: 280px 178px;
+}
+#P2{
+	margin-left: 20px;
+	width: 280px;
+	height: 178px;
+	float: left;
+	background-image: url("../images/index/xm1.png");
+	background-size: 280px 178px;
+}
+#P3{
+	margin-left: 20px;
+	width: 280px;
+	height: 178px;
+	float: left;
+	background-image: url("../images/index/xm4.jpg");
+	background-size: 280px 178px;
+}
+#P4{
+	margin-left: 20px;
+	width: 280px;
+	height: 178px;
+	float: left;
+	background-image: url("../images/index/xm3.jpg");
+	background-size: 280px 178px;
+}
+/*新机型优惠展示 */
+
+
+/*黑鲨手机logo*/
+
+.logo-HS{
+	width: 1366px;
+	height: 180px;
+	margin: 0 auto;
+	background-image: url("../images/index/11.png");
+}
+
+
+
+/*黑鲨手机logo*/
+
+
+/*手机展示部分*/
+.SJ{
+	width: 1366px;
+	height: 70px;
+	margin:0 auto;
+	position: relative;
+	background-color: #F0F0F0;
+}
+
+ .SJ li{
+    margin-left: 93px;
+	line-height: 92px;
+ }
+
+ .Meizu-all{
+ 	width: 1366px;
+ 	height: 626px;
+ 	position: relative;
+ 	margin:0 auto;
+ 	background-color: #F0F0F0;
+ }
+ .Meizu{
+ 	width: 1180px;
+ 	height: 626px;
+ 	margin: 0 auto;
+ 	top:2px;
+ }
+ .Meizu div{
+ 	transition: all 0.5s;
+ 	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+ }
+ .Meizu div:hover{
+ 	box-shadow: DimGrey 2px 2px 6px;
+ 	margin-top: -6px;
+ }
+ .Meizu-p1{
+ 	width: 580px;
+ 	height: 626px;
+ 	float: left;
+ 	background-image: url("../images/index/16th.png");
+ }
+  .Meizu-p2{
+ 	width: 580px;
+ 	height: 626px;
+ 	float: left;
+ 	margin-left: 20px;
+ 	background-image: url("../images/index/16x.png");
+ }
+ .MI-all{
+ 	top: 20px;
+ 	width: 1366px;
+ 	height: 350px;
+ 	margin: 0 auto;
+ 	background-color: #F0F0F0;
+ 	position: relative;
+ }
+.MI{
+	width: 1180px;
+	height: 350px;
+	margin: 0 auto;
+}
+.MI div{
+	transition: all 0.5s;
+ 	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.MI-1{
+	width: 280px;
+	height: 350px;
+	float: left;
+	background-image: url("../images/index/01.png");
+	
+}
+.MI div:hover{
+	box-shadow: DimGrey 2px 2px 6px;
+    margin-top: -6px;
+}
+.MI-2{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/6..png");
+}
+
+.MI-3{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/2..png");
+}
+
+.MI-4{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/4..png");
+}
+
+	
+.MI-top{
+	width:1366px;
+	height: 350px;
+	background-color: #F0F0F0;
+	position: relative;
+	margin: 0 auto;
+	top: 40px;
+}
+.MI2{
+	width: 1180px;
+	height: 350px;
+	margin: 0 auto;
+}
+.MI2 div{
+	transition: all 0.5s;
+ 	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.MI2 div:hover{
+     box-shadow: DimGrey 2px 2px 6px;
+     margin-top: -6px;
+}
+.MI-11{
+	width: 280px;
+	height: 350px;
+	float: left;
+	background-image: url("../images/index/7.png");
+}
+
+.MI-22{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/3..png");
+}
+
+.MI-33{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/7.png");
+}
+
+.MI-44{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/8.png");
+}
+
+.GD{
+	width: 1366px;
+	height: 90px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #F0F0F0;
+	top: 60px;
+}
+.GD-wz{
+	width: 50px;
+	height: 50px;
+	background-color: #F0F0F0;
+	float: left;
+	margin-top: 10px;
+	margin-left: 1173px;
+}
+.GD-wz li{
+	line-height: 45px;
+	margin-left: 6px;
+}
+.GD-tp{
+	width: 50px;
+	height: 50px;
+	background-color: #F0F0F0;
+	float: left;
+	margin-top: 10px;
+	background-image: url("../images/index/dbx.png");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	margin-left:10px;
+	margin-top: 22px;
+}
+/*手机展示部分*/
+
+
+/*小米笔记本推荐*/
+.computer{
+	width: 1366px;
+	height: 181px;
+	background-color: #33c1ff;
+	position: relative;
+	margin:0 auto;
+    top: 70px;
+    background-image: url("../images/index/11-1.png");
+}
+/*小米笔记本推荐*/
+
+
+/*笔记本电脑的所有类型*/
+.computer-wz{
+	width: 1366px;
+	height: 70px;
+	margin:0 auto;
+	position: relative;
+	background-color: #F0F0F0;
+	top: 30px;
+}
+.computer-wz li{
+	margin-left: 93px;
+	line-height: 92px;
+}
+
+.computer-all{
+	width: 1366px;
+	height: 720px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #F0F0F0;
+	top: 30px;
+}
+.computer-center{
+	width: 1180px;
+	height: 720px;
+	margin: 0 auto;
+}
+.computer-1{
+	width: 280px;
+	height: 720px;
+	float: left;
+	transition: all 0.5s;
+	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    background-image: url("../images/index/0.png");
+}
+.computer-1:hover{
+	margin-top: -6px;
+	box-shadow: DimGrey 2px 2px 6px;
+}
+.computer-2{
+	width: 880px;
+	height: 720px;
+	float: left;
+	margin-left: 20px;
+}
+.computer-2-top{
+	width: 880px;
+	height: 350px;
+}
+.computer-2-bottom{
+	width: 880px;
+	height: 350px;
+	margin-top: 20px;
+}
+.computer-2-top div{
+	transition: all 0.5s;
+	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.computer-2-top div:hover{
+	box-shadow: DimGrey 2px 2px 6px;
+	margin-top: -6px;
+}
+.computer-2-top-1{
+	width: 280px;
+	height: 350px;
+	float: left;
+	background-image: url("../images/index/1.png");
+
+}
+
+.computer-2-top-2{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/2.png");
+}
+
+.computer-2-top-3{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/3.png");
+}
+
+.computer-2-bottom div{ 
+	transition: all 0.5s;     /*平移时间*/
+	-moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.computer-2-bottom div:hover{
+	box-shadow: DimGrey 2px 2px 6px;  /*阴影*/
+	margin-top: -6px;
+}
+.computer-2-bottom-1{
+	width: 280px;
+	height: 350px;
+	float: left;
+	background-image: url("../images/index/4.png");
+}
+
+.computer-2-bottom-2{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/5.png");
+}
+.computer-2-bottom-3{
+	width: 280px;
+	height: 350px;
+	float: left;
+	margin-left: 20px;
+	background-image: url("../images/index/6.png");
+}
+.GD2{
+	width: 1366px;
+	height: 110px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #F0F0F0;
+	top: 50px;
+
+}
+/*笔记本电脑的所有类型*/
+
+
+/*保修，联系客服*/
+.footer{
+	width: 1366px;
+	height: 175px;
+	position: relative;
+	margin:0 auto;
+	background-color: #FFFFFF;
+	top: 60px;
+}
+.footer-1{
+	width: 888px;
+	height: 88px;
+	background-color:#FFFFFF;
+	margin-left: 139px;
+	display: inline-block;
+	margin-top: 30px;
+}
+.footer-1 a{
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+}
+.footer-1 a p{
+	color: #999999;
+}
+.footer-1 .a{
+	margin-left: 90px;
+}
+
+.footer-2{
+	width: 330px;
+	height: 175px;
+	float: right;
+	background-color: #FFFFFF;
+}
+.day {
+	font-size: 20px;
+	margin-top: 30px;
+	text-align: center;
+	color: #666666;
+}
+.number{
+	margin-top: 14px;
+	font-size: 26px;
+	text-align: center;
+	color: #33c1ff;
+}
+.zx{
+	width: 140px;
+	height: 35px;
+	background-color: #33c1ff;
+	border-radius: 20px;
+	margin-left: 100px;
+	font-size: 16px;
+	margin-top: 17px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+}
+/*保修，联系客服*/
+
+
+/*了解我们*/
+.copyright{
+    width: 1366px;
+	height: 76px;
+	position: relative;
+	margin:0 auto;
+	top: 60px;
+	background: #F0F0F0;
+}
+.copyright ul{
+	padding-left:110px;
+	padding-top:30px;
+}
+.copyright li{
+	display: inline-block;
+}
+.copyright li a{
+	font-size: 16px;
+	color: #333333;
+	margin-left: 15px;
+}
+
+/*了解我们*/
+
+/*fixed定位图标*/
+.FH-all{
+	width: 40px;
+	height: 216px;
+	background-color:rgba(0,0,0,0.1);
+	left: 95%;
+	position: fixed;
+	z-index: 99999;
+	bottom: 50px;
+}
+.FH{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.2);
+	position:fixed;
+	z-index:999999;
+	bottom: 50px;
+	border-radius: 20px;
+	left: 95%;
+	
+}
+.FH p{
+	display: none;
+}
+.FH:hover p{
+	display: inline-block;
+}
+.FH-1{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.2);
+	/*position:fixed;*/
+	z-index:999999;
+	bottom: 50px;
+	border-radius: 20px;
+}
+.FH-1 p{
+	display: none;
+}
+.FH-1:hover p{
+	display: inline-block;
+}
+.FH-2{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.2);
+	/*position:fixed;*/
+	z-index:999999;
+	bottom: 50px;
+	border-radius: 20px;
+	margin-top: 4px;
+}
+.FH-2 p{
+	display: none;
+}
+.FH-2:hover p{
+	display: inline-block;
+}
+.FH-3{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.2);
+	/*position:fixed;*/
+	z-index:999999;
+	bottom: 50px;
+	border-radius: 20px;
+	margin-top: 4px;
+}
+.FH-3 p{
+	display: none;
+}
+.FH-3:hover p{
+	display: inline-block;
+}
+.FH-4{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.2);
+	/*position:fixed;*/
+	z-index:999999;
+	bottom: 50px;
+	border-radius: 20px;
+	margin-top: 4px;
+}
+.FH-4 p{
+	display: none;
+}
+.FH-4:hover p{
+	display: inline-block;
+}
+.one{
+	width: 60px;
+	height: 30px;
+	border-radius: 40px;
+	margin-left: -120px;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 5px;
+}
+.two{
+	width: 60px;
+	height: 30px;
+	border-radius: 40px;
+	margin-left: -120px;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 5px;
+}
+.three{
+	width: 80px;
+	height: 30px;
+	border-radius: 40px;
+	margin-left: -140px;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 5px;
+}
+.four{
+	width: 80px;
+	height: 30px;
+	border-radius: 40px;
+	margin-left: -140px;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 5px;
+}
+.five{
+	width: 60px;
+	height: 30px;
+	border-radius: 40px;
+	margin-left: -120px;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 5px;
+}
+.jtfh{
+	margin-left: 10px;
+	margin-top:8px;
+}
+.FH p{
+   padding-left: 15px;
+   padding-top: 4px;
+}
+.FH-1 p{
+   padding-left: 15px;
+   padding-top: 4px;
+}
+.FH-2 p{
+   padding-left: 15px;
+   padding-top: 4px;
+}
+.FH-3 p{
+   padding-left: 15px;
+   padding-top: 4px;
+}
+.FH-4 p{
+   padding-left: 15px;
+   padding-top: 4px;
+}
+/*fixed定位图标*/
+

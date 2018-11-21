@@ -118,8 +118,6 @@ body{
 .main-left ul li ul li{
 	width:250px;
 	height: 80px;
-	background-image: url("../images/xm.png");
-	background-repeat: no-repeat;
 	/*float: left;*/
 }
 .main-left ul li:hover ul{
@@ -132,7 +130,12 @@ body{
 
 .main-left ul li ul li a{
 	color: #333333;
-	margin-left: 120px;
+	vertical-align: text-bottom;
+}
+.main-left ul li ul li img{
+	width: 60px;
+	height: 60px;
+	margin-left: 30px;
 }
 .main-left ul li ul li:hover a{
 	color: #33c1ff;
